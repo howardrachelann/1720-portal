@@ -1,0 +1,15 @@
+/* BORDER BOX */
+* {
+    box-sizing: border-box;
+   
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+header {
+    padding: 10px 0 10px 10px;
+    border-bottom: solid 1px #ddd;
+}
+header span {
+    color: #232323;
+}
