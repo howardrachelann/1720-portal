@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width="736" height="952"=device-width="736" height="952", initial-scale=1.0">
     <title>Rachel Howard Portal | DWDD1720</title>
 
     <!-- STYLESHEETS-->
@@ -20,7 +20,8 @@
 
     <!-- OPEN GRAPH TAGS-->
     <meta property="og:title" content="Rachel Howard Portal | DWDD1720" />
-    <meta property="og:description" content="Welcome to the portal page for Rachel Howard's DWDD1720 course. Explore assignments, projects, and more." />
+    <meta property="og:description"
+        content="Welcome to the portal page for Rachel Howard's DWDD1720 course. Explore assignments, projects, and more." width="736" height="952" />
     <meta property="og:image" content="https://howardrachelann.github.io/1720-portal/images/opengraph.jpg" />
     <meta property="og:url" content="https://howardrachelann.github.io/1720-portal/" />
     <meta property="og:logo" content="https://howardrachelann.github.io/1720-portal/images/star-fill.svg" />
@@ -44,11 +45,95 @@
 
 <body>
     <header>
-        <img src="images/star-fill.svg" alt="Site Logo" width="16" height="16">
+        <img src="images/star-fill.svg" alt="Site Logo" width="736" height="952"="16" height="16">
         <span>Rachel Howard</span>
+        <button id="hamburger" class="hamburger" aria-label="Nav Link Button"></button>
     </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#mug">Mug Shot</a></li>
+            <li><a href="#assign">Assignments</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Portal Page</h1>
+        <div class="sbs">
+            <section>
+                <h2 id="about">About Me</h2>
+                <p>I am a student studying web design and development with an emphasis in interaction design at Utah
+                    Valley University. I am a junior and enjoy creating interactive web experiences. During my free
+                    time, I like to hike, read, and create.</p>
+            </section>
+            <section>
+                <h2 id="mug">Mug Shot</h2>
+                <img src="images/selfie.webp" alt="Rachel Selfie" width="736" height="952"="600" height="330" loading="lazy">
+            </section>
+        </div>
 
-    <h1>Test Font Family</h1>
+        <!-- MEDIA ASSIGNMENT CARD-->
+        <div class="cards">
+            <section>
+                <h2 id="assign">Assignment Name</h2>
+                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
+                <p>Description of this assignment...</p>
+                <a href="#">View the Assignment</a>
+            </section>
+
+            <section>
+                <h2>Assignment Name</h2>
+                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
+                <p>Description of this assignment...</p>
+                <a href="#">View the Assignment</a>
+            </section>
+
+            <section>
+                <h2>Assignment Name</h2>
+                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
+                <p>Description of this assignment...</p>
+                <a href="#">View the Assignment</a>
+            </section>
+
+            <section>
+                <h2>Assignment Name</h2>
+                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
+                <p>Description of this assignment...</p>
+                <a href="#">View the Assignment</a>
+            </section>
+
+            <section>
+                <h2>Assignment Name</h2>
+                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
+                <p>Description of this assignment...</p>
+                <a href="#">View the Assignment</a>
+            </section>
+
+
+
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <section class="social">
+            <a href="https://www.youtube.com" target="_blank"><img src="images/icon-youtube.svg" alt="Youtube Icon"
+                    width="736" height="952"="16" height="16"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/icon-linkedin.svg"
+                    alt="LinkedIn Icon" width="736" height="952"="16" height="16"></a>
+            <a href="https://github.com" target="_blank"><img src="images/icon-github.svg" alt="Github Icon" width="736" height="952"="16"
+                    height="16"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook Icon"
+                    width="736" height="952"="16" height="16"></a>
+        </section>
+        <p>&copy; <span id="currentyear"></span> &bull; Rachel Howard &bull; DWDD1720</p>
+    </footer>
 
 </body>
 
