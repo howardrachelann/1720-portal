@@ -55,6 +55,10 @@ nav a:hover {
     background-color: #d0c39b;
 }
 
+nav li.active a{
+    background-color: #666;
+    color: #eee;
+}
 nav.show {
     display: block;
 }
@@ -78,12 +82,42 @@ nav.show {
 }
 
 
-/* MAIN STUFF */
+/* MAIN LAYOUT */
 h1 {
     font-size: 1.5rem;
     color: #3D405B;
     font-weight: 500;
     margin-left: 10px;
+}
+
+/************************** HERO IMAGE LAYOUT ***************************/
+.hero {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.hero a {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: #698974;
+    padding: 10px 20px;
+    border-radius: 99px;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 10px #222;
+    font-size: 1.5rem;
+    &:hover {
+        background-color: #0b5379;
+    }
 }
 
 .sbs section {
@@ -175,11 +209,33 @@ h1 {
     }
 
 }
+/********************************* VIDEO **********************************/
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+details {
+    margin: .5rem 10px;
+    padding: 10px;
+    background-color: #e1dac2;
+    border-radius: 10px;
+}
+
+details summary {
+    color: #222;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+details p {
+    color: #222;
+    font-weight: 300;
+}
 
 
-
-
-/* SOCIAL STUFF */
+/********************************* SOCIAL STUFF ***********************************/
 .social {
     display: flex;
     justify-content: center;

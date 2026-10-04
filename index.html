@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width="736" height="952"=device-width="736" height="952", initial-scale=1.0">
+    <meta name="viewport" content="width=" 736" height="952"=device-width="736" height="952" , initial-scale=1.0">
     <title>Rachel Howard Portal | DWDD1720</title>
 
     <!-- STYLESHEETS-->
@@ -21,7 +21,8 @@
     <!-- OPEN GRAPH TAGS-->
     <meta property="og:title" content="Rachel Howard Portal | DWDD1720" />
     <meta property="og:description"
-        content="Welcome to the portal page for Rachel Howard's DWDD1720 course. Explore assignments, projects, and more." width="736" height="952" />
+        content="Welcome to the portal page for Rachel Howard's DWDD1720 course. Explore assignments, projects, and more."
+        width="736" height="952" />
     <meta property="og:image" content="https://howardrachelann.github.io/1720-portal/images/opengraph.jpg" />
     <meta property="og:url" content="https://howardrachelann.github.io/1720-portal/" />
     <meta property="og:logo" content="https://howardrachelann.github.io/1720-portal/images/star-fill.svg" />
@@ -52,66 +53,85 @@
     <nav id="navbar">
         <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#mug">Mug Shot</a></li>
-            <li><a href="#assign">Assignments</a></li>
+            <li class="active"><a href="#mug">Mug Shot</a></li>
+            <li class="active"><a href="#assign">Assignments</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Portal Page</h1>
-        <div class="sbs">
-            <section>
-                <h2 id="about">About Me</h2>
-                <p>I am a student studying web design and development with an emphasis in interaction design at Utah
-                    Valley University. I am a junior and enjoy creating interactive web experiences. During my free
-                    time, I like to hike, read, and create.</p>
-            </section>
-            <section>
-                <h2 id="mug">Mug Shot</h2>
-                <img src="images/selfie.webp" alt="Rachel Selfie" width="736" height="952"="600" height="330" loading="lazy">
-            </section>
-        </div>
-
-        <!-- MEDIA ASSIGNMENT CARD-->
-        <div class="cards">
-            <section>
-                <h2 id="assign">Assignment Name</h2>
-                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
-                <p>Description of this assignment...</p>
-                <a href="#">View the Assignment</a>
-            </section>
-
-            <section>
-                <h2>Assignment Name</h2>
-                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
-                <p>Description of this assignment...</p>
-                <a href="#">View the Assignment</a>
-            </section>
-
-            <section>
-                <h2>Assignment Name</h2>
-                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
-                <p>Description of this assignment...</p>
-                <a href="#">View the Assignment</a>
-            </section>
-
-            <section>
-                <h2>Assignment Name</h2>
-                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
-                <p>Description of this assignment...</p>
-                <a href="#">View the Assignment</a>
-            </section>
-
-            <section>
-                <h2>Assignment Name</h2>
-                <img src="images/assign-placeholder.webp" alt="Assignment for..." width="736" height="952" loading="lazy">
-                <p>Description of this assignment...</p>
-                <a href="#">View the Assignment</a>
-            </section>
+        <h1>Practice Page</h1>
+        <picture class="hero">
+            <source media="(max-width: 610px)" srcset="images/hero-small-610.webp">
+            <source media="(max-width: 900px)" srcset="images/hero-medium-900.webp">
+            <img src="images/hero-large-1200.webp" alt="Fisherman's Wharf">
+            <a href="#">Ask to Join</a>
+        </picture>
 
 
+        <video controls poster="media/poster.webp" width="1280" height="720">
+            <source src="media/aitalk.mp4" type="video/mp4" />
+            <source src="media/aitalk.webm" type="video/webm" />
+            <track label="English" kind="subtitles" srclang="en" src="media/captions-en.vtt" default />
+            <track label="中文" kind="subtitles" srclang="captions-zh-Hant" src="media/captions-zh-Hant.vtt" />
 
+        </video>
+        <details>
+            <summary>Video Transcript</summary>
+            <p>How have you been using AI
 
-        </div>
+in your school work?
+
+Umm, I use it to help me summarize lecture notes and
+
+I use it sometimes when I don't 
+
+understand the math problem.
+
+Nice
+
+What about you? 
+
+I use it as a tool for a lot of my design processes.
+
+I 
+
+ I use it to help me brainstorm ideas
+
+I use it to 
+
+help me speed up 
+
+wireframes and help me prototype 
+
+umm my designs 
+
+Well that's very useful then
+
+Yeah I think it's very useful
+
+What kind of AI platforms do you use?
+
+I mainly like to use Claude or ChatGPT
+
+I use Claude more for prototyping and coding
+
+How about you?
+
+I use Gemini 
+
+What do you like about Gemini?
+
+I like the way the website looks
+
+it just looks very 
+
+minimalistic and clean
+
+You like the UI of the website?
+Yes
+
+Nice</p>
+        </details>
+
 
     </main>
 
@@ -127,8 +147,8 @@
                     width="736" height="952"="16" height="16"></a>
             <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/icon-linkedin.svg"
                     alt="LinkedIn Icon" width="736" height="952"="16" height="16"></a>
-            <a href="https://github.com" target="_blank"><img src="images/icon-github.svg" alt="Github Icon" width="736" height="952"="16"
-                    height="16"></a>
+            <a href="https://github.com" target="_blank"><img src="images/icon-github.svg" alt="Github Icon" width="736"
+                    height="952"="16" height="16"></a>
             <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook Icon"
                     width="736" height="952"="16" height="16"></a>
         </section>
