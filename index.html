@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=" 736" height="952"=device-width="736" height="952" , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachel Howard Portal | DWDD1720</title>
 
     <!-- STYLESHEETS-->
@@ -21,14 +21,11 @@
     <!-- OPEN GRAPH TAGS-->
     <meta property="og:title" content="Rachel Howard Portal | DWDD1720" />
     <meta property="og:description"
-        content="Welcome to the portal page for Rachel Howard's DWDD1720 course. Explore assignments, projects, and more."
-        width="736" height="952" />
+        content="Welcome to the portal page for Rachel Howard's DWDD1720 course. Explore assignments, projects, and more." />
     <meta property="og:image" content="https://howardrachelann.github.io/1720-portal/images/opengraph.jpg" />
     <meta property="og:url" content="https://howardrachelann.github.io/1720-portal/" />
     <meta property="og:logo" content="https://howardrachelann.github.io/1720-portal/images/star-fill.svg" />
     <meta property="og:type" content="website" />
-
-
 
     <!--FAV ICON LINKS-->
     <link rel="icon" type="image/png" href="/1720-portal/favicon-96x96.png" sizes="96x96" />
@@ -46,33 +43,33 @@
 
 <body>
     <header>
-        <img src="images/star-fill.svg" alt="Site Logo" width="736" height="952"="16" height="16">
+        <img src="images/star-fill.svg" alt="Site Logo" width="16" height="16">
         <span>Rachel Howard</span>
         <button id="hamburger" class="hamburger" aria-label="Nav Link Button"></button>
     </header>
     <nav id="navbar">
         <ul>
             <li><a href="#about">About Me</a></li>
-            <li class="active"><a href="#mug">Mug Shot</a></li>
+            <li><a href="#mug">Mug Shot</a></li>
             <li class="active"><a href="#assign">Assignments</a></li>
         </ul>
     </nav>
     <main>
         <h1>Practice Page</h1>
-        <picture class="hero">
-            <source media="(max-width: 610px)" srcset="images/hero-small-610.webp">
-            <source media="(max-width: 900px)" srcset="images/hero-medium-900.webp">
-            <img src="images/hero-large-1200.webp" alt="Fisherman's Wharf">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 610px)" srcset="images/hero-small-610.webp">
+                <source media="(max-width: 900px)" srcset="images/hero-medium-900.webp">
+                <img src="images/hero-large-1200.webp" alt="Fisherman's Wharf">
+            </picture>
             <a href="#">Ask to Join</a>
-        </picture>
-
+        </div>
 
         <video controls poster="media/poster.webp" width="1280" height="720">
             <source src="media/aitalk.mp4" type="video/mp4" />
             <source src="media/aitalk.webm" type="video/webm" />
             <track label="English" kind="subtitles" srclang="en" src="media/captions-en.vtt" default />
-            <track label="中文" kind="subtitles" srclang="captions-zh-Hant" src="media/captions-zh-Hant.vtt" />
-
+            <track label="中文" kind="subtitles" srclang="zh-Hant" src="media/captions-zh-Hant.vtt" />
         </video>
         <details>
             <summary>Video Transcript</summary>
@@ -132,25 +129,18 @@ Yes
 Nice</p>
         </details>
 
-
     </main>
-
-
-
-
-
-
 
     <footer>
         <section class="social">
             <a href="https://www.youtube.com" target="_blank"><img src="images/icon-youtube.svg" alt="Youtube Icon"
-                    width="736" height="952"="16" height="16"></a>
+                    width="16" height="16"></a>
             <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/icon-linkedin.svg"
-                    alt="LinkedIn Icon" width="736" height="952"="16" height="16"></a>
-            <a href="https://github.com" target="_blank"><img src="images/icon-github.svg" alt="Github Icon" width="736"
-                    height="952"="16" height="16"></a>
+                    alt="LinkedIn Icon" width="16" height="16"></a>
+            <a href="https://github.com" target="_blank"><img src="images/icon-github.svg" alt="Github Icon"
+                    width="16" height="16"></a>
             <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook Icon"
-                    width="736" height="952"="16" height="16"></a>
+                    width="16" height="16"></a>
         </section>
         <p>&copy; <span id="currentyear"></span> &bull; Rachel Howard &bull; DWDD1720</p>
     </footer>
