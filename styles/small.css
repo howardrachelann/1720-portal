@@ -1,19 +1,38 @@
-/* BORDER BOX */
+/*************** COLOR SCHEME ***************/
+:root {
+    --color-primary: #f2e6b1;
+    --color-secondary: #49243e;
+    /* series of grey scale colors */
+    --color-mygrey-05: lab(98% 0 0);
+    --color-mygrey-10: lab(97% 0 0);
+    --color-mygrey-20: lab(91% 0 0);
+    --color-mygrey-30: lab(85% 0 0);
+    --color-mygrey-40: lab(66% 0 0);
+    --color-mygrey-50: lab(48% 0 0);
+    --color-mygrey-60: lab(34% 0 0);
+    --color-mygrey-70: lab(27% 0 0);
+    --color-mygrey-80: lab(15% 0 0);
+    --color-mygrey-90: lab(8% 0 0);
+    --color-mygrey-95: lab(3% 0 0);
+}
+
+
+/****************** BORDER BOX ******************/
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-/* BODY TAGS */
+/******************** BODY TAGS *********************/
 body {
     font-family: "Poppins", sans-serif;
 }
 
-/* HEADER */
+/**************************** HEADER *****************************/
 header {
     padding: 10px 0 10px 10px;
     display: grid;
-    grid-template-columns: 24px auto 44px;
+    grid-template-columns: auto 44px;
     align-items: end;
     column-gap: 8px;
     border-bottom: solid 1px #ddd;
@@ -21,7 +40,7 @@ header {
 
 header img {
     display: block;
-    width: 100%;
+    width: 131px;
     height: auto;
     padding-bottom: 2px;
 }
@@ -30,7 +49,7 @@ header span {
     color: #232323;
 }
 
-/* NAVIGATION */
+/******************************* NAVIGATION ********************************/
 nav {
     background-color: #e1dac2;
     display: none;
@@ -55,10 +74,11 @@ nav a:hover {
     background-color: #d0c39b;
 }
 
-nav li.active a{
+nav li.active a {
     background-color: #666;
     color: #eee;
 }
+
 nav.show {
     display: block;
 }
@@ -82,13 +102,106 @@ nav.show {
 }
 
 
-/* MAIN LAYOUT */
+/*************************** MAIN LAYOUT **************************/
 h1 {
     font-size: 1.5rem;
-    color: #3D405B;
+    color: var(--color-secondary);
     font-weight: 500;
     margin-left: 10px;
 }
+
+p {
+    color: var(--color-grey-90);
+}
+
+/************************** FORM LAYOUT ***************************/
+form {
+    margin: 1rem 10px;
+
+    label {
+        display: block;
+        font-size: .7rem;
+        padding-top: 0.2rem;
+        color: var(--color-mygrey-40);
+        text-transform: uppercase;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="email"],
+    textarea,
+    select {
+        display: block;
+        margin: 0.1rem 0 1rem 0;
+        padding: .6rem 10px;
+        border: 1px solid var(--color-mygrey-10);
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color: var(--color-mygrey-10);
+        font-size: .8rem;
+        background-color: var(--color-mygrey-05);
+        width: 90%;
+
+        &::placeholder {
+            color: var(--color-mygrey-30);
+        }
+    }
+
+    input:required {
+        border-left-color: var(--color-secondary);
+    }
+
+    input:focus {
+        border-left-color: var(--color-primary);
+        outline: none;
+    }
+
+    input:required:valid {
+        border-left-color: var(--color-primary);
+    }
+}
+
+input[type="submit"] {
+    border: none;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-mygrey-0);
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1rem;
+    -webkit-appearance: none;
+    appearance: none;
+
+    &:hover {
+        box-shadow: 0 0 10px var(--color-secondary);
+    }
+}
+
+/************************** STYLE FORM RE ***************************/
+
+.results {
+    background-color: var(--color-mygrey-05);
+    margin: 0 10px 1rem 10px;
+    padding: 10px;
+    border: 1px solid var(--color-mygrey-40);
+    border-radius: 6px;
+
+    p {
+        padding: 5px 0;
+        font-weight: 300;
+        color: var(--color-secondary);
+    }
+
+    span {
+        font-weight: 400;
+        color: var(--color-mygrey-50);
+    }
+}
+
+
+
 
 /************************** HERO IMAGE LAYOUT ***************************/
 .hero {
@@ -97,12 +210,14 @@ h1 {
     padding: 0 10px;
     position: relative;
 }
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 6px;
 }
+
 .hero a {
     position: absolute;
     bottom: 20px;
@@ -115,6 +230,7 @@ h1 {
     border: 1px solid #aaa;
     box-shadow: 0 0 10px #222;
     font-size: 1.5rem;
+
     &:hover {
         background-color: #0b5379;
     }
@@ -209,6 +325,7 @@ h1 {
     }
 
 }
+
 /********************************* VIDEO **********************************/
 video {
     display: block;
@@ -216,6 +333,7 @@ video {
     height: auto;
     padding: 0 10px;
 }
+
 details {
     margin: .5rem 10px;
     padding: 10px;

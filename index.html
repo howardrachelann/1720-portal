@@ -43,8 +43,7 @@
 
 <body>
     <header>
-        <img src="images/star-fill.svg" alt="Site Logo" width="16" height="16">
-        <span>Rachel Howard</span>
+        <img src="images/favicon.png" alt="Site Logo" width="131" height="50" load="lazy">
         <button id="hamburger" class="hamburger" aria-label="Nav Link Button"></button>
     </header>
     <nav id="navbar">
@@ -57,6 +56,44 @@
     </nav>
     <main>
         <h1>Practice Page</h1>
+
+        <p>Hello World</p>
+        <form action="results.html" method="get">
+            <label> First Name
+                <input type="text" name="first" required autocomplete="given-name" placeholder="First Name">
+            </label>
+            <label> Last Name
+                <input type="text" name="last" required autocomplete="family-name" placeholder="Last Name">
+            </label>
+            <label> Phone Number
+                <input type="tel" name="phone" required autocomplete="tel" placeholder="985-555-1245">
+            </label>
+            <label> Email
+                <input type="email" name="Email" required autocomplete="email" placeholder="zen@msn.com">
+            </label>
+            <label> Portfolio URL
+                <input type="url" name="url" required autocomplete="url" placeholder="https://example.com">
+            </label>
+            <label> Apply as
+                <select name="who" required>
+                    <option value="Master">Master Designer</option>
+                    <option value="Apprentice">Apprentice Designer</option>
+                    <option value="Student">Student Designer</option>
+                    <option value="Employeer">Employeer</option>
+                </select>
+            </label>
+            <label>Comments
+                <textarea name="comments" rows="5" placeholder="Enter your message"></textarea>
+            </label>
+            <input type="submit" value="Apply Now">
+
+
+
+
+
+
+        </form>
+
         <div class="hero">
             <picture>
                 <source media="(max-width: 610px)" srcset="images/hero-small-610.webp">
