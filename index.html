@@ -38,6 +38,8 @@
     <!-- SCRIPTS-->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/year.js" defer></script>
+    <script src="scripts/to-console.js" type="module"></script>
+    <script src="scripts/schedule.js" type="module"></script>
 
 </head>
 
@@ -55,117 +57,20 @@
         </ul>
     </nav>
     <main>
-        <h1>Practice Page</h1>
-
-        <p>Hello World</p>
-        <form action="results.html" method="get">
-            <label> First Name
-                <input type="text" name="first" required autocomplete="given-name" placeholder="First Name">
-            </label>
-            <label> Last Name
-                <input type="text" name="last" required autocomplete="family-name" placeholder="Last Name">
-            </label>
-            <label> Phone Number
-                <input type="tel" name="phone" required autocomplete="tel" placeholder="985-555-1245">
-            </label>
-            <label> Email
-                <input type="email" name="Email" required autocomplete="email" placeholder="zen@msn.com">
-            </label>
-            <label> Portfolio URL
-                <input type="url" name="url" required autocomplete="url" placeholder="https://example.com">
-            </label>
-            <label> Apply as
-                <select name="who" required>
-                    <option value="Master">Master Designer</option>
-                    <option value="Apprentice">Apprentice Designer</option>
-                    <option value="Student">Student Designer</option>
-                    <option value="Employeer">Employeer</option>
-                </select>
-            </label>
-            <label>Comments
-                <textarea name="comments" rows="5" placeholder="Enter your message"></textarea>
-            </label>
-            <input type="submit" value="Apply Now">
-
-
-
-
-
-
-        </form>
-
         <div class="hero">
-            <picture>
-                <source media="(max-width: 610px)" srcset="images/hero-small-610.webp">
-                <source media="(max-width: 900px)" srcset="images/hero-medium-900.webp">
-                <img src="images/hero-large-1200.webp" alt="Fisherman's Wharf">
-            </picture>
-            <a href="#">Ask to Join</a>
+            <img src="images/hero.webp" alt="mountains" width="1200" height="350" loading="lazy">
+            <h1>Practice Page</h1>
         </div>
 
-        <video controls poster="media/poster.webp" width="1280" height="720">
-            <source src="media/aitalk.mp4" type="video/mp4" />
-            <source src="media/aitalk.webm" type="video/webm" />
-            <track label="English" kind="subtitles" srclang="en" src="media/captions-en.vtt" default />
-            <track label="中文" kind="subtitles" srclang="zh-Hant" src="media/captions-zh-Hant.vtt" />
-        </video>
-        <details>
-            <summary>Video Transcript</summary>
-            <p>How have you been using AI
+        <div id="message"></div>
+        <table id="schedule-here" class="schedule">
+            <tr>
+                <th>Time</th>
+                <th>Topic</th>
+                <th>Speaker</th>
+            </tr>
+        </table>
 
-                in your school work?
-
-                Umm, I use it to help me summarize lecture notes and
-
-                I use it sometimes when I don't
-
-                understand the math problem.
-
-                Nice
-
-                What about you?
-
-                I use it as a tool for a lot of my design processes.
-
-                I
-
-                I use it to help me brainstorm ideas
-
-                I use it to
-
-                help me speed up
-
-                wireframes and help me prototype
-
-                umm my designs
-
-                Well that's very useful then
-
-                Yeah I think it's very useful
-
-                What kind of AI platforms do you use?
-
-                I mainly like to use Claude or ChatGPT
-
-                I use Claude more for prototyping and coding
-
-                How about you?
-
-                I use Gemini
-
-                What do you like about Gemini?
-
-                I like the way the website looks
-
-                it just looks very
-
-                minimalistic and clean
-
-                You like the UI of the website?
-                Yes
-
-                Nice</p>
-        </details>
 
     </main>
 

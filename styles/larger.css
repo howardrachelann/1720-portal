@@ -40,3 +40,12 @@ nav li:last-child a {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+
+
+/*************************** SCHEDULE LAYOUT **************************/
+.schedule {
+  font-size: 1rem;
+}
+.schedule img {
+  width: 150px;
+}

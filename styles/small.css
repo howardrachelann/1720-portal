@@ -114,6 +114,100 @@ p {
     color: var(--color-grey-90);
 }
 
+/*************************** HERO LAYOUT **************************/
+.hero {
+  position: relative;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+   border-radius: 0;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: rgba(255,255,255,.5);
+  width: 100%;
+  color: var(--color-secondary);
+  font-weight: 400;
+}
+
+
+
+/*************************** SCHEDULE LAYOUT **************************/
+
+.schedule {
+  border-collapse: collapse;
+  margin: 1rem 10px;
+  color: var(--color-mygrey-70);
+  font-size: .7rem;
+}
+.schedule tr {
+  border-bottom: 1px solid var(--color-mygrey-20);
+  &:hover {background-color: var(--color-mygrey-05);}
+}
+.schedule th {
+  background-color: var(--color-primary);
+  color: var(--color-mygrey-0);
+  padding: 1rem 0;
+}
+.schedule td {
+  padding: 5px;
+  vertical-align: top;
+}
+.schedule p {
+  margin: 0;
+  padding: 0;
+}
+.schedule .time {
+  font-weight: 700;
+  font-size: .7rem;
+  color: var(--color-mygrey-40);
+}
+.schedule .title {
+  font-weight: 600;
+  color: var(--color-secondary);
+  padding-bottom: 5px;
+}
+.schedule .name {
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-align: center;
+}
+.schedule img {
+  display: block;
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+}
+.schedule .desc {
+  font-weight: 600;
+  color: var(--color-mygrey-50);
+  font-size: .7rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************************** FORM LAYOUT ***************************/
 form {
     margin: 1rem 10px;
