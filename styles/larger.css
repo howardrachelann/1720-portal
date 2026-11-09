@@ -18,6 +18,11 @@ nav ul{
     margin-left: 10px;
 }
 
+/************************** HEADER **************************/
+header {
+    grid-template-columns: auto 44px;
+}
+
 /* HAMBURGER STUFF */
 .hamburger {
     display: none;

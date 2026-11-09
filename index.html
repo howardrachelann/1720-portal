@@ -40,13 +40,17 @@
     <script src="scripts/year.js" defer></script>
     <script src="scripts/to-console.js" type="module"></script>
     <script src="scripts/schedule.js" type="module"></script>
+    <script src="scripts/account.js" defer></script>
+    <script src="scripts/dark.js" defer></script>
 
 </head>
 
 <body>
     <header>
         <img src="images/favicon.png" alt="Site Logo" width="131" height="50" load="lazy">
+        <button id="dark" class="darkbtn"><img src="images/dark-theme.svg" alt="dark mode" width="22" height="22"></button>
         <button id="hamburger" class="hamburger" aria-label="Nav Link Button"></button>
+        
     </header>
     <nav id="navbar">
         <ul>
@@ -57,19 +61,31 @@
         </ul>
     </nav>
     <main>
-        <div class="hero">
-            <img src="images/hero.webp" alt="mountains" width="1200" height="350" loading="lazy">
-            <h1>Practice Page</h1>
-        </div>
+        <h1>Practice Page</h1>
 
-        <div id="message"></div>
-        <table id="schedule-here" class="schedule">
-            <tr>
-                <th>Time</th>
-                <th>Topic</th>
-                <th>Speaker</th>
-            </tr>
-        </table>
+        <!-- Create a new profile using form inputs and save it to local storage -->
+        <section id="signup" class="signup">
+            <h2>Create a New Profile</h2>
+            <form>
+                <label>
+                    Full Name: <input type="text" id="name" autocomplete="name" class="input" required>
+                </label>
+                <label>
+                    Phone: <input type="tel" id="phone" autocomplete="phone" class="input" required>
+                </label>
+                <label>
+                    Email: <input type="email" id="email" autocomplete="email" class="input" required>
+                </label>
+                <input class="button" type="submit" value="Create New Profile">
+            </form>
+        </section>
+
+        <!-- Display the existing profile from local storage -->
+        <section id="display" class="display">
+            <h2>Your Profile</h2>
+            <div></div>
+            <button class="button">Delete my Profile</button>
+        </section>
 
 
     </main>
